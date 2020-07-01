@@ -1,0 +1,202 @@
+IndentationError: unexpected indent -- due to spaces at the start of the line
+
+
+
+-- docstrings are not omitted by interpreter
+
+-- comments are omitted by interpreter
+
+variable datatypes
+
+type(x)--> shows the datatypes of variables
+
+1. numbers
+			integer --> x = 10 
+			float --> x = 10.234
+			Complex --> x = 25j
+2. String
+			name = 'Aniket'
+			print(len(name)) --> 6
+			print(name[2]) --> i
+			s = name[2] = 'd'  --> error Strings are immutable we cannot change.
+			print(name[0:6])   --> Aniket
+			print(name[2:8])  -->  iket
+			print(name[0:5]) --> Anike
+			print(name.lower())  --> aniket
+			print(name.upper())   --> ANIKET
+			"""letter from end of string"""
+			print(name[-2]) --> e
+			print(name[4])  --> e
+						
+3. List 
+			
+			list is a collection of arrays
+			Ordered
+			can be changed
+			Duplicate enteries are present
+			Ex: Fruits = ['apple','kiwi','banana']
+			print(Fruits)
+			
+			mylist = [10, 20, 30, 30, 'edureka', 'courses'] - [10, 20, 30, 30, 'edureka', 'courses']
+			
+
+			print(mylist[2:5])  - [30, 30, 'edureka']
+			mylist[2] = 35 - [10, 20, 35, 30, 'edureka', 'courses']
+			
+			# append -  add value at the end
+			mylist.append(10) -  [10, 20, 35, 30, 'edureka', 'courses', 10]
+			
+
+			# insert -  add value at the middle of the list
+			mylist.insert(5, 100) - [10, 20, 35, 30, 'edureka', 100, 'courses', 10]
+			
+			# reverse - reverse the value of the list
+			mylist.reverse()  -  [10, 'courses', 100, 'edureka', 30, 35, 20, 10]
+
+
+
+4. Dictionary  - is a collection like a list with key and value pairs
+				 Unordered , 
+				 can be changed. 
+				 No duplicate entries are present
+				  	
+				 courses = {1 : 'python',2 : 'data science','third' : 'machine learning'}
+					print(courses)
+					{1: 'python', 2: 'data science', 'third': 'machine learning'}
+					key  value	
+				courses['third']
+				'machine learning'
+				
+				courses.get('third') - 'machine learning'
+				courses['third'] = 'hadoop'
+				print(courses)
+				{1: 'python', 2: 'data science', 'third': 'hadoop'}
+
+				courses['four'] = 'machine learning'
+				{1: 'python', 2: 'data science', 'third': 'hadoop', 'four': 'machine learning'}
+
+5. Tuple  -     
+				ordered
+				cannot be changed
+				duplicate entries are present
+				immutable
+				
+				
+				** access index value 
+				animals[2]
+				20
+				
+				animals.count('tiger')
+				2
+
+
+
+6. SET - 
+				is a collection
+				unordered
+				No duplicate entries
+
+				Myset = {10,20,30,40,40,30,'edureka','courses'}
+				Myset
+				{40, 10, 'courses', 20, 'edureka', 30} --> no duplicate values
+
+				Myset[2] 
+				Traceback (most recent call last):
+				File "<input>", line 1, in <module>
+				TypeError: Myset[2]
+				TypeError: 'set' object is not subscriptable
+				TypeError: 'set' object does not support indexing
+
+Range() -
+				is for iterating 2 values 
+				
+				range(10)
+				>>> range(0, 10)
+				
+				want to print the no. from 0 to 10
+				
+				put it in the list
+				
+				list(range(11))
+				[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+				a = [1,2,3,4]
+				b = [4,5,6,3,6]
+				c  = [a , b]
+				print(c)
+				[[1, 2, 3, 4], [4, 5, 6, 3, 6]]
+	
+Type conversion - To convert a type of a varible into another datatypes 
+
+				x = 10
+				name = 'name'
+				x + name
+				Traceback (most recent call last):
+				File "<input>", line 1, in <module>
+				TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+			functions 
+			1. int()
+			2. float()
+			3. tuple()
+			4. list()
+			5. set()
+			6. dict()
+			
+			str(x) + name   -->no error
+			'10name'
+
+			Dictionary converted into list
+			
+			list(b)
+			[4, 5, 6, 3, 6]
+			
+Collections 
+
+			- Container data types
+			4 collections data types which are used to store collections of data
+				1. Lists -- declared in [ ]
+				2. Tuples -- 
+				3. sets -  declared in { }  
+				4. Dictionary -- {key : value}
+			
+			built in module as Collections
+			Specialised collection data structure 
+			1. namedtuple()
+			2. Chainmap
+			3. deque
+			4. Counter
+			5. OrderedDict
+			6. defaultdict
+			7. UserDict
+			8. UserList
+			9. UserString
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
